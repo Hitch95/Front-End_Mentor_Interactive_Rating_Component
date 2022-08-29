@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: rgba(30, 38, 49, 255);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+/* mon Reset */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--VeryDarkBlue);
+  font-family: "Overpass", sans-serif;
+  min-height: 100vh;
+}
+
+.cardFace {
+  background-color: var(--DarkBlue);
+  width: 450px;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 1.5rem;
+  padding: 0 30px 0 35px;
+}
+
+header aside {
+  background-color: rgba(38, 46, 57, 255);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  padding: 15px;
+  position: absolute;
+  left: 35px;
+  top: 30px;
+}
+
+aside img {
+  position: relative;
+  bottom: 3px;
+  right: 3px;
+}
+
+header h1 {
+  margin-top: 20px;
+  text-align: left;
+  color: var(--White);
+}
+
+.cardFace p {
+  color: var(--LightGrey);
+  font-size: 15px;
+  letter-spacing: 1.1px;
+  line-height: 1.5;
+  padding: 15px 20px 20px 0px;
+}
+
+.cardFace ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 380px;
+}
+
+ul li button {
+  background-color: rgba(38, 46, 57, 255);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  color: var(--White);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+ul li button:hover {
+  background-color: var(--Orange);
+}
+
+ul li button:focus {
+  background-color: var(--LightGrey);
+}
+
+#button {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: var(--Orange);
+  border-radius: 2.5rem;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, 0.15) 0 4px 9px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 15px 15px;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  top: 35px;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s;
+  user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  width: 380px;
+}
+
+#button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 0.35s;
+}
+
+#button:active {
+  transform: translateY(2px);
+  transition-duration: 0.35s;
+}
+
+.cardBack {
+  display: none;
+  background-color: var(--DarkBlue);
+  width: 450px;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 1.5rem;
+  padding: 0 30px 0 35px;
+}
+
+.cardBack img {
+  position: relative;
+  left: 180px;
+  top: -50px;
+  transform: translate(-50%, 50%);
+}
+
+.cardBack aside .choice {
+  background-color: rgba(38, 46, 57, 255);
+  color: var(--Orange);
+  opacity: 0.75;
+  border-radius: 2.5rem;
+  padding: 10px 12px;
+  margin: 10px 0 50px 0;
+  position: relative;
+  transform: translate(40%, 50%);
+  letter-spacing: 1.2px;
+}
+
+.cardBack article {
+  width: 100%;
+}
+
+.cardBack article h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--White);
+  margin-bottom: 20px;
+}
+
+.cardBack article p {
+  color: var(--LightGrey);
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 1.1px;
+  line-height: 1.5;
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
