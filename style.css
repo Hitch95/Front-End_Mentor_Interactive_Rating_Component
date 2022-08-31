@@ -99,7 +99,7 @@ ul li button:focus {
   background-color: var(--LightGrey);
 }
 
-#button {
+.cardFace #submitBtn {
   appearance: none;
   backface-visibility: hidden;
   background-color: var(--Orange);
@@ -128,7 +128,7 @@ ul li button:focus {
   width: 380px;
 }
 
-#button:hover {
+.cardFace #submitBtn:hover {
   background-color: var(--White);
   color: var(--Orange);
   opacity: 1;
@@ -136,13 +136,12 @@ ul li button:focus {
   transition-duration: 0.35s;
 }
 
-#button:active {
+.cardFace #submitBtn:active {
   transform: translateY(2px);
   transition-duration: 0.35s;
 }
 
 .cardBack {
-  display: none;
   background-color: var(--DarkBlue);
   width: 450px;
   height: 400px;
@@ -155,6 +154,10 @@ ul li button:focus {
   align-items: flex-start;
   border-radius: 1.5rem;
   padding: 0 30px 0 35px;
+}
+
+.hidden {
+  display: none;
 }
 
 .cardBack img {
@@ -174,6 +177,11 @@ ul li button:focus {
   position: relative;
   transform: translate(40%, 50%);
   letter-spacing: 1.2px;
+}
+
+.cardBack aside .choice .numberSubmitted {
+  display: inline-block;
+  color: var(--Orange);
 }
 
 .cardBack article {
